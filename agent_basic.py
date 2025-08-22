@@ -3,8 +3,8 @@ from vertexai.generative_models import GenerativeModel
 import os
 
 class SimpleAgent:
-    def __init__(self, model_name="gemini-1.5-flash"):
-        init(project=os.environ["GOOGLE_CLOUD_PROJECT"], location=os.environ.get("REGION", "asia-northeast3"))
+    def __init__(self, model_name="gemini-2.0-flash"):
+        init(project=os.environ["GOOGLE_CLOUD_PROJECT"], location=os.environ.get("REGION", "us-central1"))
         self.model = GenerativeModel(model_name)
 
     def ask(self, message: str) -> str:
