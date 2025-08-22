@@ -6,7 +6,7 @@ project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
 region = os.environ.get("REGION", "asia-northeast3")
 
 init(project=project_id, location=region)
-model = GenerativeModel("gemini-2.5-flash")
+model = GenerativeModel("gemini-1.5-pro")
 
 resp = model.generate_content("안녕! 넌 누구야? 한 줄로 답해줘")
 print(resp.text)
