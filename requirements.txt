@@ -1,0 +1,5 @@
+google-cloud-aiplatform
+google-cloud-discoveryengine
+streamlit
+pandas
+matplotlib
