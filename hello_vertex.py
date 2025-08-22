@@ -3,6 +3,9 @@ from vertexai.generative_models import GenerativeModel
 import os
 
 project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
+
+model_name = "gemini-2.5-flash-lite"
+
 # 서울 리전 대신 global 지정
 location = os.environ.get("REGION", "asia-northeast3")
 if model_name.startswith("gemini-2.5"):
