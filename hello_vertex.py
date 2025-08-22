@@ -4,8 +4,7 @@ import os
 
 project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
 
-model_name = "gemini-1.5-pro"
-
+model_name = "gemini-2.0-flash"
 location = "us-central1"
 
 init(project=project_id, location=location)
